@@ -1,4 +1,4 @@
-/* Implementation of Function */
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 2.Write a C program to copy the contents of the original array into another array in reverse order.
 This reversed array will help the auditors review the shipments from the most recent to the earliest.
