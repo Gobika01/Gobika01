@@ -1,0 +1,65 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Write a C program to analyze the data and determine
+How many had negative temperatures,
+
+How many days had even temperatures, and
+
+How many had odd temperatures.
+
+This analysis will help the station classify weather patterns efficiently
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+#include <stdio.h>
+
+int main() {
+        printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        printf("\n Program by : Gobika.N -I Year B.E CSBS");
+        printf"\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+
+
+    int temperatures[10], positive = 0, negative = 0, even = 0, odd = 0;
+
+    printf("Enter 10 temperature readings:\n");
+    for (int i = 0; i < 10; i++) {
+        scanf("%d", &temperatures[i]);
+
+        if (temperatures[i] > 0) positive++;
+        if (temperatures[i] < 0) negative++;
+        if (temperatures[i] % 2 == 0) even++;
+        else odd++;
+    }
+
+    printf("Positive days : %d\nNegative days : %d\nEven days : %d\nOdd days : %d\n",
+           positive, negative, even, odd);
+
+    return 0;
+}
+
+Output
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program by : Gobika.N - I Year B.E CSBS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Enter 10 temperature readings:
+-4
+14
+6
+2
+-6
+21
+7
+-6
+1
+8
+Positive days : 7
+Negative days : 3
+Even days : 7
+Odd days : 3
+
+````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+
+
+
+
+
+
