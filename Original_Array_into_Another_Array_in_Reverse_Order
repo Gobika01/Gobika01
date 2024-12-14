@@ -1,0 +1,58 @@
+/* Implementation of Function */
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2.Write a C program to copy the contents of the original array into another array in reverse order. This reversed array will help the auditors review the shipments from the most recent to the earliest.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#include <stdio.h>
+#define size 7
+int main() {
+
+    printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+    printf("/n Program by : Gobika.N - I Year B.E CSBS ");
+    printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+  
+    int shipmentIDs[size] = {45,55,64,89,47,81,23};
+    int reversedIDs[size]; 
+    for (int i = 0; i < size; i++) {
+        reversedIDs[i] = shipmentIDs[size - 1 - i];
+    }
+    printf("Original Shipment IDs : \n");
+    for (int i = 0; i < size; i++) {
+        printf("%d ", shipmentIDs[i]);
+    }
+    printf("\n");
+    printf("Reversed Shipment IDs : \n");
+    for (int i = 0; i < size; i++) {
+        printf("%d ", reversedIDs[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
+
+
+
+Output
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program by : Gobika.N -I Year B.E CSBS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Original Shipment IDs : 45 55 64 89 47 81 23
+Reversed Shipment IDS : 23 81 47 89 64 55 45
+
+`````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
