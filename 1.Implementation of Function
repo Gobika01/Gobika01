@@ -1,0 +1,61 @@
+/*Implementation of Function */
+
+---------------------------------------------------------------------------------------------------------
+1.Write a C program to interchage the odd-indexed and even-indexed elements in the array 
+---------------------------------------------------------------------------------------------------------
+#include <stdio.h>
+void main()
+{
+printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+printf("\n Progrm by : Gobika.N - I Year B.E CSBS");
+Printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+
+void interchangeOddEven(int arr[], int size) {
+    for (int i = 0; i < size - 1; i += 2) {
+        int temp = arr[i];
+        arr[i] = arr[i + 1];
+        arr[i + 1] = temp;
+    }
+}
+int main() {
+    int arr[] = {16,28,35,48,57,69,72,80};
+    int size = sizeof(arr) / sizeof(arr[0]);
+
+    printf("Original Array : ");
+    for (int i = 0; i < size; i++) printf("%d ", arr[i]);
+    printf("\n");
+
+    interchangeOddEven(arr, size);
+
+    printf("Modified Array : ");
+    for (int i = 0; i < size; i++) printf("%d ", arr[i]);
+    printf("\n");
+
+    return 0;
+}
+
+    
+
+Ouput
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program by : Gobika.N -I Year B.E CSBS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Original Array : 16 28 35 48 57 69 72 80
+Modified Array : 28 16 48 35 69 57 80 72
+
+````````````````````````````````````````````````````````````````````````````````````````````````````````
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
