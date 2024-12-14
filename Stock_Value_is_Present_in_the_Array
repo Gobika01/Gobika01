@@ -1,5 +1,6 @@
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Write a C program to check if the searched stock value is present in the array. If the stock value is found, display how many times it appears; otherwise, indicate that the stock value is not available.
+Write a C program to check if the searched stock value is present in the array. 
+If the stock value is found, display how many times it appears; otherwise, indicate that the stock value is not available.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #include <stdio.h>
 int main() {
