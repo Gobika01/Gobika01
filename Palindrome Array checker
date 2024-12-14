@@ -1,0 +1,44 @@
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Write a C program to check if the array of numbers represents a palindrome. Specifically, verify if the first element matches the last, the second matches the second-to- last, and so on.
+This functionality will help determine if the given sequence of numbers has symmetry.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#include <stdio.h>
+#include <stdbool.h>
+
+bool isPalindrome(int arr[], int size) {
+         printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+         printf("\n Program by : Gobika.N - I YearB.E CSBS");
+         printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+
+    for (int i = 0; i < size / 2; i++) {
+        if (arr[i] != arr[size - i - 1]) return false;
+    }
+    return true;
+}
+
+int main() {
+    int arr[] = {45,36,25,42,53};
+    int size = sizeof(arr) / sizeof(arr[0]);
+
+    printf(isPalindrome(arr, size) ? "Palindrome\n" : "Not a palindrome\n");
+    return 0;
+}
+Output
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program by : Gobika.N  - I Year B.E CSBS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Not a palindrome
+
+
+
+
+````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+
+
+
+
+
+
+
+
