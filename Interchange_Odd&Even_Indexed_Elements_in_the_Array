@@ -4,7 +4,7 @@
 1.Write a C program to interchage the odd-indexed and even-indexed elements in the array 
 ---------------------------------------------------------------------------------------------------------
 #include <stdio.h>
-void swapTeamScores(int arr[], int size) {
+void swapTeamScores(int arr[], int size) 
 {
 printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 printf("\n Progrm by : Gobika.N - I Year B.E CSBS");
@@ -26,17 +26,15 @@ void printArray(int arr[], int size) {
 int main() {
     int arr[] = {43,46,47,32,39,60};
     int size = sizeof(arr) / sizeof(arr[0]);
-    printf("Original array:\n");
+    printf("Original Array:\n");
     printArray(arr, size);
 
     swapTeamScores(arr, size);
 
-    printf("Modified array:\n");
+    printf("Modified Array:\n");
     printArray(arr, size);
-
     return 0;
 }
-
 
     
 Ouput
